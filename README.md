@@ -46,7 +46,7 @@ $
 $ # find the location of the config file
 $ fndr file
 Your configuration file is in the following location:
-/Users/moontology/.fndr/jupiter.json
+~/.fndr/jupiter.json
 
 $ # get current connector being used
 $ fndr connector
@@ -114,7 +114,7 @@ $ fndr export
 You're export was created in the following location.
 NOTE: this contains your account information unencrypted so keep it in a safe place!
 
-/Users/moontography/.fndr/export_1614540410.json
+~/.fndr/export_1614540410.json
 
 ```
 
@@ -140,46 +140,9 @@ $ fndr use -c jupiter
 
 #### Requirements
 
-- A funded [Jupiter blockchain](https://gojupiter.tech/) address (JUP-XXX-XXX...)
+- A funded [Jupiter blockchain](https://jup.io) address (JUP-XXX-XXX...)
   - _When we say "funded", we mean you need a VERY TINY amount of JUP in this address. We attempt to fund a newly created account that will be used to store transactions with your encrypted account data with 0.0005 JUP (50000 NQT), which as of the time of writing is fractions of a cent in USD._
 
-### We want your ideas and PRs for new connectors!
-
-#### TODO
-
-Today if you've been using a connector and would like to switch to a different one, your accounts are not ported over to the new connector. We will add this functionality soon.
-
-## Development
-
-I'd love for you to contribute to the project! Use the steps below to pull down the source code and build, and feel free to create PRs as you'd like.
-
-All PRs need to passing tests that test any additions or changes to existing code.
-
-```sh
-$ git clone https://github.com/moontography/fndr
-$ cd fndr
-$ npm install
-$
-$ # run tests
-$ npm test
-$
-$ # build app (also run this after making changes to source code)
-$ npm run build
-$
-$ # now you can run commands with the locally built entry point
-$ # example:
-$ node dist/fndr search -q facebook
-```
-
-## Quick Note
+## Quick Note from moontography (original repo)
 
 fndr with the `filesystem` connector is basically a rebuild of [hide](https://github.com/whatl3y/hide) password manager. I'm still decided whether to rename this repo back to `hide` and provide clear migration steps from it or leave fndr alone, I haven't really decided yet :)
-
-# Tips w/ cryptocurrency
-
-I love FOSS (free and open source software) and for the most part don't want to charge for the software I build. It does however take a good bit of time keeping up with feature requests and bug fixes, so if you have the desire and ability to send me a free coffee, it would be greatly appreciated!
-
-- Bitcoin (BTC): `3D779dP5SZo4szHivWHyFd6J2ESumwDmph`
-- Ethereum (ETH and ERC-20 tokens): `0xF3ffa9706b3264EDd1DAa93D5F5D70C8f71fAc99`
-- Stellar (XLM): `GACH6YMYFZ574FSGCV7IJXTGETEQL3DLQK64Z6DFGD57PZL5RH6LYOJT`
-- Jupiter (JUP) mainnet: `JUP-TUWZ-4B8Z-9REP-2YVH5`
