@@ -1,6 +1,6 @@
 {
   "name": "fndr",
-  "version": "0.2.2",
+  "version": "0.2.3",
   "description": "Password manager that stores your information securely in the datastore of your choice through connectors.",
   "main": "./dist/fndrLibs.js",
   "repository": {
@@ -25,7 +25,7 @@
     "commander": "^7.1.0",
     "dayjs": "^1.10.4",
     "inquirer": "^8.0.0",
-    "jupiter-node-sdk": "^0.0.8",
+    "jupiter-node-sdk": "^0.5.0",
     "minimist": "^1.2.5",
     "uuid": "^8.3.2"
   },
